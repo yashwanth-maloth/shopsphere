@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopSphere – Online Shopping</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<header class="header">
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <a href="#" class="logo">Shop<span>Sphere</span></a>
+  <div class="location"><small>Deliver to</small><strong>📍 Khammam 507003</strong></div>
+  <form class="search" id="searchForm">
+    <select id="searchCategory" aria-label="Search category"></select>
+    <input type="search" id="searchInput" placeholder="Search ShopSphere" aria-label="Search products">
+    <button type="submit" aria-label="Search">🔍</button>
+  </form>
+  <div class="header-item lang"><small>🌐</small><strong>EN ▾</strong></div>
+  <div class="header-item"><small>Hello, sign in</small><strong>Account ▾</strong></div>
+  <div class="header-item"><small>Returns</small><strong>& Orders</strong></div>
+  <button class="cart" id="cartButton" aria-label="Cart">🛒<span id="cartCount">0</span><b>Cart</b></button>
+</header>
+
+<nav class="nav" id="mainNav"></nav>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="slides" id="slides"></div>
+    <button class="arrow prev" id="prevSlide" aria-label="Previous">‹</button>
+    <button class="arrow next" id="nextSlide" aria-label="Next">›</button>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="categories" id="categoryCards"></section>
+
+  <section class="products-section">
+    <div class="toolbar">
+      <h2 id="resultsTitle">All products</h2>
+      <div class="chips" id="chips"></div>
+      <label>Sort by
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Avg. Customer Rating</option>
+          <option value="discount">Biggest Discount</option>
+        </select>
+      </label>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+</main>
+
+<div class="toast" id="toast"></div>
+
+<footer class="footer">
+  <button class="back-top" id="backTop">Back to top</button>
+  <div class="footer-links">
+    <div><h4>Get to Know Us</h4><a href="#">About ShopSphere</a><a href="#">Careers</a><a href="#">Press</a></div>
+    <div><h4>Make Money with Us</h4><a href="#">Sell on ShopSphere</a><a href="#">Affiliate Program</a><a href="#">Advertise</a></div>
+    <div><h4>Payment</h4><a href="#">Cards</a><a href="#">UPI</a><a href="#">EMI Options</a></div>
+    <div><h4>Help</h4><a href="#">Your Orders</a><a href="#">Returns</a><a href="#">Customer Service</a></div>
+  </div>
+  <p class="copyright">© 2026 ShopSphere – a student demo project. Not affiliated with any real retailer.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
